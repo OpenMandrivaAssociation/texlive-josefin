@@ -1,6 +1,6 @@
 Name:		texlive-josefin
 Version:	64569
-Release:	1
+Release:	2
 Summary:	Josefin fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/josefin
