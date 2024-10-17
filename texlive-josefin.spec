@@ -3,7 +3,7 @@ Version:	64569
 Release:	2
 Summary:	Josefin fonts with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/josefin
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/josefin
 License:	ofl lppl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/josefin.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/josefin.doc.r%{version}.tar.xz
