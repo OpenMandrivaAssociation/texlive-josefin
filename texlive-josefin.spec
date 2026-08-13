@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/josefin.r%{tl_re
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/josefin.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for
@@ -20,3 +21,10 @@ the Josefin Sans family of fonts, designed by Santiago Orozco of the
 Typemade foundry in Monterey, Mexico. Josefin Sans is available in seven
 weights, with corresponding italics.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from josefin:
+Map josefin.map
+TL_DROPIN_EOF
